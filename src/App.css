@@ -1,38 +1,138 @@
+/* src/App.css */
+
+/* Reset Styles */
+body, html, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation Menu */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  z-index: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar li {
+  margin: 0 1.5em;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #03396c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-bar a:hover {
+  color: #005b96;
+}
+
+/* Landing Section */
+.landing-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  padding-top: 3.5em; /* Offset for fixed nav-bar */
+  background-color: #e0f2ff; /* Light blue background */
+  color: #03396c; /* Dark blue text */
 }
 
-.App-link {
-  color: #61dafb;
+.landing-section h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.landing-section p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #03396c;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #005b96;
+}
+
+/* Sections */
+.section {
+  padding: 5em 1em;
+  margin-top: 3.5em; /* Offset for fixed nav-bar */
+}
+
+.section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  color: #03396c;
+  margin-bottom: 0.5em;
+}
+
+.section p {
+  font-size: 1.2em;
+  color: #555555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .nav-bar ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-bar li {
+    margin: 0.5em 0;
+  }
+
+  .landing-section h1 {
+    font-size: 2.5em;
+  }
+
+  .landing-section p {
+    font-size: 1.2em;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
+
+  .section p {
+    font-size: 1em;
   }
 }
