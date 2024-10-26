@@ -17,12 +17,7 @@ function App() {
           </li>
           <li>
             <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="blogs" smooth={true} duration={500}>
-              Blogs
+              About Us
             </Link>
           </li>
           <li>
@@ -52,29 +47,24 @@ function App() {
       <section id="home" className="section">
         <h2>Home</h2>
         <p>
-          [Welcome to Connect Beacon! We connect people and technology for a
-          better future.]
+          At Connect Beacon, we specialize in providing top-notch connectivity solutions and SaaS products to help businesses thrive in a digital world. Our dedicated team bridges the gap between technology and your business needs, ensuring seamless integration and exceptional performance.
         </p>
       </section>
 
-      {/* About Section */}
+      {/* About Us Section */}
       <section id="about" className="section">
-        <h2>About</h2>
+        <h2>About Us</h2>
         <p>
-          [Connect Beacon is a startup focused on bridging the digital divide.]
+          Connect Beacon is a leading services company focused on delivering innovative connectivity solutions and cutting-edge SaaS products. We empower businesses to connect seamlessly and operate efficiently in today's fast-paced technological landscape.
         </p>
-      </section>
-
-      {/* Blogs Section */}
-      <section id="blogs" className="section">
-        <h2>Blogs</h2>
-        <p>[Read our latest articles on connectivity and innovation.]</p>
       </section>
 
       {/* Contact Us Section */}
       <section id="contact" className="section">
         <h2>Contact Us</h2>
-        <p>[Get in touch with us for collaboration and inquiries.]</p>
+        <p>
+          We're here to assist you with your connectivity and SaaS needs. Reach out to us at (connectbeaconnet@gmail.com) for collaboration, inquiries, or to learn more about how Connect Beacon can drive your business forward.
+        </p>
       </section>
     </div>
   );
