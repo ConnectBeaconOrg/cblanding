@@ -1,7 +1,10 @@
 /* src/App.css */
 
 /* Reset Styles */
-body, html, ul, li {
+body,
+html,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -10,10 +13,6 @@ body, html, ul, li {
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-}
-
-.App {
-  text-align: center;
 }
 
 /* Navigation Menu */
@@ -56,7 +55,12 @@ body {
   align-items: center;
   height: 100vh;
   padding-top: 3.5em; /* Offset for fixed nav-bar */
-  background-color: #e0f2ff; /* Light blue background */
+  /* background-color: #e0f2ff;  */
+  /* background: linear-gradient(44.44deg, #27dbed7a 7.79%, #4867ffa8 94.18%); */
+  background-image: radial-gradient(ellipse 80% 80% at 50% 30%, hsl(210, 100%, 90%), transparent);
+  /* background-image: radial-gradient(ellipse 80% 80% at 50% 30%, hsl(205.63deg 44.86% 41.96% / 47%), transparent); */
+  /* background-image: radial-gradient(ellipse 180% 100% at 50% 30%, hsl(210, 100%, 90%), transparent); */
+  /* background-image: radial-gradient(ellipse 180% 100% at 50% 30%, hsl(191.08deg 59.1% 83.03%), transparent); */
   color: #03396c; /* Dark blue text */
 }
 
