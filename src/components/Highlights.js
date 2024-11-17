@@ -12,7 +12,7 @@ import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRound
 import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
 import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import { blue, green, pink, purple, red, yellow } from '@mui/material/colors';
-import { Slide, Zoom } from '@mui/material';
+import { Zoom } from '@mui/material';
 
 const items = [
     {

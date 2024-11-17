@@ -1,8 +1,7 @@
-import { Avatar, Button, Container, Fade, Grid2, Icon, IconButton, Stack, Typography } from "@mui/material"
-import SitemarkIcon from "./SitemarkIcon"
+import { Avatar, Container, Fade, Grid2, IconButton, Stack, Typography } from "@mui/material"
 import React from "react";
 import { Link } from "react-scroll";
-import { ContactEmergencyOutlined, EmailRounded, Facebook, Instagram, LocationCityOutlined, LocationCityTwoTone, MobileFriendly, MobileFriendlyOutlined, MobileFriendlyRounded, PinDrop, SupportAgentRounded, Twitter } from "@mui/icons-material";
+import { EmailRounded, Facebook, Instagram, PinDrop, Twitter } from "@mui/icons-material";
 import { SUPPORT_EMAIL_ADDRESS } from "../utils/consants";
 import ConnectBeaconLogo from '../assets/connect_beacon_logo.jfif'
 

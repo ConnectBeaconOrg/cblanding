@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import LighthouseAnimation from './components/LighthouseAnimation';
 import { Link } from 'react-scroll';
