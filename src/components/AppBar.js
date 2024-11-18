@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { Avatar } from '@mui/material';
 import ConnectBeaconLogo from '../assets/connect_beacon_logo.jfif'
+import { scroller } from 'react-scroll';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     display: 'flex',
@@ -28,7 +29,12 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     boxShadow: (theme.vars || theme).shadows[1],
     padding: '8px 12px',
 }));
-
+const scrollOptions = {
+    duration: 500,
+    smooth: true,
+    offset: -80, // Scrolls to element + 50 pixels down the page
+    // ... other options
+}
 export default function AppAppBar() {
     const [open, setOpen] = React.useState(false);
 
@@ -63,13 +69,23 @@ export default function AppAppBar() {
                             alignItems: 'center',
                         }}
                     >
-                        <Button variant="text" sx={{ color: "#18181b" }} size="small">
+                        <Button variant="text" sx={{ color: "#18181b" }} size="small" onClick={() => {
+                            scroller.scrollTo('home', scrollOptions)
+                        }} target='home'>
                             Home
                         </Button>
-                        <Button variant="text" sx={{ color: "#18181b" }} size="small">
+                        <Button variant="text" sx={{ color: "#18181b" }} size="small"
+                            onClick={() => {
+                                scroller.scrollTo('about', scrollOptions)
+                            }}
+                            target='about'>
                             About
                         </Button>
-                        <Button variant="text" sx={{ color: "#18181b" }} size="small">
+                        <Button variant="text" sx={{ color: "#18181b" }} size="small"
+                            onClick={() => {
+                                scroller.scrollTo('contact', scrollOptions)
+                            }}
+                            target='contact'>
                             Contact us
                         </Button>
                     </Box>

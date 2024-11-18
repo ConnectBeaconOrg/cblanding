@@ -1,7 +1,7 @@
 import { Avatar, Container, Fade, Grid2, IconButton, Stack, Typography } from "@mui/material"
 import React from "react";
 import { Link } from "react-scroll";
-import { EmailRounded, Facebook, Instagram, PinDrop, Twitter } from "@mui/icons-material";
+import { EmailRounded, Facebook, Instagram, LinkedIn, PinDrop, SupportAgentRounded, Twitter } from "@mui/icons-material";
 import { SUPPORT_EMAIL_ADDRESS } from "../utils/consants";
 import ConnectBeaconLogo from '../assets/connect_beacon_logo.jfif'
 
@@ -52,6 +52,9 @@ const Footer = () => {
                                 <IconButton><Twitter sx={{ color: "#1DA1F2" }} /></IconButton>
                                 <IconButton><Instagram sx={{ color: "#cd486b" }} /></IconButton>
                                 <IconButton><Facebook sx={{ color: "#4267B2" }} /></IconButton>
+                                <IconButton onClick={() => {
+                                    window.open("https://www.linkedin.com/company/connect-beacon/", '_blank')
+                                }}><LinkedIn sx={{ color: "#004182" }} /></IconButton>
                             </Stack>
                         </Stack>
                     </Grid2 >
@@ -71,6 +74,7 @@ const Footer = () => {
                                 to="about"
                                 smooth={true}
                                 duration={500}
+                                offset={-80}
                             >
                                 About
                             </Link>
@@ -106,6 +110,7 @@ const Footer = () => {
                                 to="contact"
                                 smooth={true}
                                 duration={500}
+                                offset={-80}
                             >
                                 Contact
                             </Link>
@@ -123,12 +128,12 @@ const Footer = () => {
                                 </Typography>
 
                             </Stack>
-                            {/* <Stack direction={'row'} alignItems={'center'} gap={2}>
+                            <Stack direction={'row'} alignItems={'center'} gap={2}>
                                 <SupportAgentRounded color="success" />
-                                <Typography>+91-919999999
+                                <Typography>+914049983275
                                 </Typography>
 
-                            </Stack> */}
+                            </Stack>
                             <Stack direction={'row'} alignItems={'center'} gap={2}>
                                 <EmailRounded color="warning" />
                                 <Typography>{SUPPORT_EMAIL_ADDRESS}
