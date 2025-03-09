@@ -9,7 +9,10 @@ const Contact = () => {
                 <Stack direction={'column'}>
                     <Typography component="h2" variant="h4" gutterBottom>Contact Us</Typography>
                     <Typography color='grey.600'>
-                        We're here to assist you with your connectivity and SaaS needs. Reach out to us at ({SUPPORT_EMAIL_ADDRESS}) for collaboration, inquiries, or to learn more about how Connect Beacon can drive your business forward.
+                        We’re here to assist you with your connectivity, SaaS, and AI/ML needs. Whether you’re looking for collaboration opportunities, have inquiries, or want to explore how Connect Beacon can drive your business forward, we’d love to hear from you.
+
+		      Email: ({SUPPORT_EMAIL_ADDRESS})
+	              Let’s innovate and connect seamlessly!
                     </Typography>
 
                 </Stack>

@@ -1,1 +1,1 @@
-export const SUPPORT_EMAIL_ADDRESS = "query@connectbeacon.com"
+export const SUPPORT_EMAIL_ADDRESS = "info@connectbeacon.net"

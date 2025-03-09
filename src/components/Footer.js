@@ -47,7 +47,7 @@ const Footer = () => {
                                 sx={{ height: '80px', width: "80px" }}
                                 variant="square"
                             />
-                            <Typography textAlign={'justify'}>Connect Beacon is a leading services company focused on delivering innovative connectivity solutions and cutting-edge SaaS products.</Typography>
+                            <Typography textAlign={'justify'}>Connect Beacon is a leading services company focused on delivering innovative connectivity solutions, cutting-edge SaaS products, and advanced AI/ML technologies.</Typography>
                             <Stack direction={'row'}>
                                 <IconButton><Twitter sx={{ color: "#1DA1F2" }} /></IconButton>
                                 <IconButton><Instagram sx={{ color: "#cd486b" }} /></IconButton>
