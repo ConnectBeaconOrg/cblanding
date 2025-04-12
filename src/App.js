@@ -17,42 +17,68 @@ function App() {
   return (
     <div className="App" id='home'>
       {/* Navigation Menu */}
-      <AppAppBar />
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          zIndex: 1000,
+          backdropFilter: 'blur(12px)',
+          backgroundColor: 'rgba(255, 255, 255, 0.6)',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+          padding: '0.5rem 2rem',
+          borderBottomLeftRadius: '12px',
+          borderBottomRightRadius: '12px',
+        }}
+      >
+        <AppAppBar />
+      </div>
 
-      {/* Hero Section with Wave Background */}
+      {/* Hero Section with fixed background */}
       <div style={{
         position: 'relative',
         minHeight: '100vh',
+        backgroundImage: "url('/assets/AI-connectivity.png')", // Place your background here
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(to bottom right, #e0f2ff, #ffffff)',
         padding: '2rem 0',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        marginTop: '80px'
       }}>
-        {/* Background Wave SVG */}
-        <img
-          src="/assets/stacked-steps-haikei.svg" // Place this SVG in your public/assets folder
-          alt="Wave Background"
+        {/* Dark overlay for readability */}
+        <div
           style={{
             position: 'absolute',
             top: 0,
             left: 0,
             width: '100%',
-            zIndex: 0,
-            pointerEvents: 'none'
+            height: '100%',
+            backgroundColor: 'hsla(0, 100%, 90%, 0.3)',
+            zIndex: 1
           }}
-        />
+        ></div>
 
-        <Grid2 container spacing={2} alignItems="center" justifyContent={'space-evenly'} sx={{ position: 'relative', zIndex: 1 }}>
+        <Grid2
+          container
+          spacing={2}
+          alignItems="center"
+          justifyContent={'space-evenly'}
+          sx={{ position: 'relative', zIndex: 2 }}
+        >
           <Grid2 item xs={12} md={6}>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', color: 'white' }}>
               <Typography variant='h3' fontWeight='bold'>Connect Beacon</Typography>
               <br />
-              <Typography variant='h5' color='text.secondary'>Empowering Businesses with Intelligent Connectivity</Typography>
-              <p className="text-xl text-gray-600">
-                Scalable, secure, and innovative networking solutions—built
-                for the modern digital landscape.
+              <Typography variant='h5' sx={{ color: '#f1f1f1' }}>
+                Empowering Businesses with Intelligent Connectivity
+              </Typography>
+              <p style={{ fontSize: '1.1rem', color: '#e0e0e0', marginTop: '1rem' }}>
+                Scalable, secure, and innovative networking solutions—built for the modern digital landscape.
               </p>
               <br />
               <Link
@@ -60,6 +86,14 @@ function App() {
                 className="cta-button"
                 smooth={true}
                 duration={500}
+                style={{
+                  backgroundColor: '#002f6c',
+                  color: 'white',
+                  padding: '0.75rem 1.5rem',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  fontWeight: 'bold'
+                }}
               >
                 Learn More
               </Link>
@@ -83,3 +117,4 @@ function App() {
 }
 
 export default App;
+
