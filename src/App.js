@@ -12,6 +12,7 @@ import Conatct from './components/contact';
 import BookDemo from './components/BookDemo';
 import AIUseCases from './components/AIUseCases';
 import SuccessMetrics from './components/SuccessMetrics';
+import DevExpertise from './components/DevExpertise';
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
       <Highlights />
       <About />
       <AIUseCases />
+      <DevExpertise />
       <SuccessMetrics />
       <Conatct />
       <BookDemo />
