@@ -18,23 +18,8 @@ function App() {
   return (
     <div className="App" id='home'>
       {/* Navigation Menu */}
-      <div
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          zIndex: 1000,
-          backdropFilter: 'blur(12px)',
-          backgroundColor: 'rgba(255, 255, 255, 0.6)',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-          padding: '0.5rem 2rem',
-          borderBottomLeftRadius: '12px',
-          borderBottomRightRadius: '12px',
-        }}
-      >
+     
         <AppAppBar />
-      </div>
 
       {/* Hero Section with fixed background */}
       <div style={{
@@ -49,7 +34,7 @@ function App() {
         justifyContent: 'center',
         padding: '2rem 0',
         overflow: 'hidden',
-        marginTop: '80px'
+        // marginTop: '80px'
       }}>
         {/* Dark overlay for readability */}
         <div

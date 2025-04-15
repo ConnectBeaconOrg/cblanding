@@ -28,13 +28,13 @@ export default function DevExpertise() {
       <Container maxWidth="lg">
         <Grid container spacing={6} alignItems="center">
           {/* LEFT: Cards */}
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={7} >
             <Typography variant="h4" fontWeight="bold" mb={4}>
               Our Development Expertise
             </Typography>
-            <Grid container spacing={4}>
+            <Grid container spacing={4} style={{marginTop:"-80px"}}>
               {devSkills.map((skill, i) => (
-                <Grid item xs={12} sm={6} key={i}>
+                <Grid item xs={12} sm={6} key={i} style={{paddingTop:"80px"}}>
                   <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "100%" }}>
                     <Stack spacing={2} alignItems="center">
                       {skill.icon}
