@@ -112,10 +112,10 @@ export default function AboutPage() {
         <Typography component="h3" variant="h5" align="center" gutterBottom>
           What Sets Us Apart
         </Typography>
-        <Grid container spacing={3} mt={2}>
+        <Grid container spacing={3} >
           {items.map((item, index) => (
             <Zoom in={isVisible} style={{ transitionDelay: `${index * 200}ms` }} key={index}>
-              <Grid item xs={12} sm={6} md={4}>
+              <Grid item xs={12} sm={6} md={4} style={{paddingTop:"42px"}}>
                 <Stack
                   direction="column"
                   component={Card}
